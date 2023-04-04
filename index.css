@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* Still buggy in some browsers. */
+	/* scrollbar-gutter: stable; */
+}
+
+:root {
+	overflow: hidden;
+	overflow-wrap: break-word;
+	tab-size: 4;
+	block-size: 100%;
+	font-synthesis: none;
+	text-size-adjust: 100%;
+	text-rendering: optimizeLegibility;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	overflow-y: auto;
+	block-size: 100%;
+}
+
+blockquote, h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+}
+
+canvas,
+img,
+svg,
+video {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+picture {
+	display: contents;
+}
+
+source {
+	display: none;
+}
+
+audio {
+	display: block;
+	width: 100%;
+}
+
+audio:not([controls]) {
+	display: none;
+}
+
+iframe {
+	border: 0;
+}
+
+[id] {
+	scroll-margin-block-start: 2ex;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		scroll-behavior: auto !important;
+	}
+}

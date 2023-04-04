@@ -1,0 +1,12 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# logs
+*.log
+
+# caches
+.stylelintcache
+
+# misc
+.DS_Store
