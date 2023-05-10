@@ -4,8 +4,11 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	/* Still buggy in some browsers. */
-	/* scrollbar-gutter: stable; */
+
+	/*
+	Still buggy in some browsers.
+	scrollbar-gutter: stable;
+	*/
 }
 
 :root {
@@ -14,7 +17,7 @@
 	tab-size: 4;
 	block-size: 100%;
 	font-synthesis: none;
-	text-size-adjust: 100%;
+	text-size-adjust: none;
 	text-rendering: optimizeLegibility;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-font-smoothing: antialiased;
@@ -26,8 +29,14 @@ body {
 	block-size: 100%;
 }
 
-blockquote, h1, h2, h3, h4, h5, h6 {
-  text-wrap: balance;
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
 }
 
 button,
